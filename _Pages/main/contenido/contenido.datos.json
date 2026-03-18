@@ -1,0 +1,76 @@
+{
+  "beneficios": [
+    { "icon": "shield-checkmark", "title": "Plataforma segura",  "text": "Juega con total confianza y privacidad en cada sesion." },
+    { "icon": "flash",            "title": "Acceso inmediato",   "text": "Pedi tu usuario por WhatsApp y empieza en minutos." },
+    { "icon": "logo-whatsapp",    "title": "Soporte 24/7",       "text": "Atencion directa por WhatsApp en cualquier momento." },
+    { "icon": "game-controller",  "title": "+500 juegos",        "text": "Slots, casino en vivo, ruleta y mucho mas." }
+  ],
+  "providers": [
+    {
+      "id": "pragmatic-track",
+      "name": "Pragmatic Play",
+      "logo": "logos/pragmatic.webp",
+      "description": "El proveedor mas popular del mundo. Slots con multiplicadores explosivos.",
+      "games": [
+        { "name": "Wild Wild Riches Returns",      "rtp": "96.50%", "img": "imagenes/Pragmatic/Wild.png" },
+        { "name": "Big Bass Christmas Frozen Lake", "rtp": "96.07%", "img": "imagenes/Pragmatic/Big.png" },
+        { "name": "Sweet Craze",                   "rtp": "96.54%", "img": "imagenes/Pragmatic/Sweet.png" },
+        { "name": "Wisdom of Athena 1000 Xmas",    "rtp": "96.00%", "img": "imagenes/Pragmatic/Wisdom.png" },
+        { "name": "Wheel of Happiness",            "rtp": "96.47%", "img": "imagenes/Pragmatic/Wheel.png" },
+        { "name": "Joker's Jewels Hold & Spin",    "rtp": "96.52%", "img": "imagenes/Pragmatic/Joker.png" },
+        { "name": "DJ Neko",                       "rtp": "96.48%", "img": "imagenes/Pragmatic/DJ.png" }
+      ]
+    },
+    {
+      "id": "rubyplay-track",
+      "name": "Ruby Play",
+      "logo": "logos/rubyplay.png",
+      "description": "Slots con mecanicas unicas y bonus rounds que sorprenden a cada giro.",
+      "games": [
+        { "name": "Immortal Ways Heart to Heart",  "rtp": "96.30%", "img": "imagenes/RubyPlay/Heart.jpg" },
+        { "name": "Immortal Ways Magic Gems",      "rtp": "96.35%", "img": "imagenes/RubyPlay/Magic.jpg" },
+        { "name": "Immortal Ways Volcano",         "rtp": "96.28%", "img": "imagenes/RubyPlay/Volcano.jpg" },
+        { "name": "Immortal Ways Gallina Harvest", "rtp": "96.40%", "img": "imagenes/RubyPlay/Gallina.jpg" }
+      ]
+    },
+    {
+      "id": "playngo-track",
+      "name": "Play'n Go",
+      "logo": "logos/playngo.png",
+      "description": "Innovacion en cada slot. Graficos premium y mecanicas que enganchan desde el primer giro.",
+      "games": [
+        { "name": "Book of Dead GO Collect",      "rtp": "96.21%", "img": "imagenes/PlaynGo/BookofDead.avif" },
+        { "name": "Piggy Blitz Casino Gold",       "rtp": "95.84%", "img": "imagenes/PlaynGo/PiggyBlitz.avif" },
+        { "name": "Buildin' More Bucks",           "rtp": "96.67%", "img": "imagenes/PlaynGo/BuildinMoreBucks.avif" },
+        { "name": "Wild North Radiant Skies GO Collect", "rtp": "97.12%", "img": "imagenes/PlaynGo/WildNorth.avif" },
+        { "name": "Barn Busters",                  "rtp": "95.43%", "img": "imagenes/PlaynGo/BarnBusters.avif" },
+        { "name": "Sails of Riches",               "rtp": "96.88%", "img": "imagenes/PlaynGo/SailsofRiches.avif" }
+      ]
+    },
+    {
+      "id": "kagaming-track",
+      "name": "KA Gaming",
+      "logo": "logos/kagaming.webp",
+      "description": "Slots con tematicas unicas y multiplicadores sorprendentes. Siempre algo nuevo.",
+      "games": [
+        { "name": "Bull Stampede",        "rtp": "96.03%", "img": "imagenes/KAGaming/BullStampede.avif" },
+        { "name": "Imperial Girls",       "rtp": "97.35%", "img": "imagenes/KAGaming/ImperialGirls.avif" },
+        { "name": "Mazu",                 "rtp": "95.61%", "img": "imagenes/KAGaming/Mazu.avif" },
+        { "name": "Primeval Rainforest",  "rtp": "96.79%", "img": "imagenes/KAGaming/PrimevalRainforest.avif" },
+        { "name": "Samurai Way",          "rtp": "96.14%", "img": "imagenes/KAGaming/SamuraiWay.avif" },
+        { "name": "Million Lucky Wheel",  "rtp": "97.02%", "img": "imagenes/KAGaming/MillionLuckyWheel.avif" },
+        { "name": "Enchantress Area",     "rtp": "95.88%", "img": "imagenes/KAGaming/EnchantressArea.avif" }
+      ]
+    }
+  ],
+  "bonos": [
+    { "icon": "gift",    "title": "Bono por cargas repetitivas", "text": "Jugadores que jueguen regularmente tienen extras en sus cargas.",                "waText": "Hola, quiero reclamar el bono por cargas repetitivas", "tag": "Reclamar bono",  "featured": false },
+    { "icon": "flame",   "title": "Promo de la semana",          "text": "Giros gratis en los slots mas populares del momento. Solo por tiempo limitado.", "waText": "Hola, quiero activar la promo de la semana",          "tag": "Activar promo",  "featured": true  },
+    { "icon": "diamond", "title": "Beneficios VIP",              "text": "Bonos exclusivos, cashback y atencion prioritaria para nuestros jugadores top.", "waText": "Hola, quiero conocer los beneficios VIP",             "tag": "Unirme al VIP",  "featured": false }
+  ],
+  "reviews": [
+    { "title": "Rapido y confiable", "text": "Pedi mi usuario por WhatsApp y en minutos ya estaba jugando. Excelente atencion." },
+    { "title": "Los mejores slots",  "text": "Tienen todos los juegos de Pragmatic Play. Sweet Bonanza y Gates of Olympus son mis favoritos." },
+    { "title": "Atencion increible", "text": "El soporte por WhatsApp es inmediato. Siempre resuelven cualquier duda al instante." }
+  ]
+}

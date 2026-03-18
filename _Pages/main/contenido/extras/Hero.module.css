@@ -1,0 +1,240 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 508px;
+  margin: 16px 2.5%;
+  width: 95%;
+  border-radius: 18px;
+}
+
+.heroCarousel {
+  display: flex;
+  height: 100%;
+  transition: transform 0.55s cubic-bezier(.77, 0, .18, 1);
+}
+
+.heroSlide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(19,2,39,0.97) 0%, rgba(19,2,39,0.75) 40%, rgba(19,2,39,0.25) 65%, transparent 100%),
+    linear-gradient(to left,  rgba(19,2,39,0.85) 0%, transparent 35%);
+  border-radius: 18px;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 36px;
+  max-width: 520px;
+}
+
+/* ── columna izquierda ── */
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border: 1px solid rgba(179, 57, 226, 0.35);
+  background: rgba(84, 40, 180, 0.2);
+  color: #c084fc;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.heroContent h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #fff;
+  margin: 0;
+}
+
+.heroCopy {
+  color: #D1D1D1;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0;
+}
+
+.heroCta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── columna derecha ── */
+.heroRight {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.heroMeta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.heroMeta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.68rem;
+  color: #c084fc;
+  background: rgba(84, 40, 180, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(142, 68, 173, 0.25);
+}
+
+/* ── buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-weight: 700;
+  font-size: 0.76rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn ion-icon { font-size: 0.95rem; }
+
+.btnPrimary {
+  background: linear-gradient(135deg, #25d366, #11aa4d);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.30);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 22px rgba(37, 211, 102, 0.42);
+}
+
+.btnSecondary {
+  background: rgba(84, 40, 180, 0.2);
+  color: #fff;
+  border: 1px solid rgba(142, 68, 173, 0.35);
+}
+
+.btnSecondary:hover {
+  background: linear-gradient(113deg, #5428b4 15%, #b339e2 85%);
+  border-color: transparent;
+}
+
+/* ── arrows ── */
+.heroArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(84, 40, 180, 0.25);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(142, 68, 173, 0.3);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.heroArrow:hover {
+  background: linear-gradient(113deg, #5428b4 15%, #b339e2 85%);
+  border-color: transparent;
+}
+
+.left  { left: 10px; }
+.right { right: 10px; }
+
+/* ── dots ── */
+.heroDots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.30);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  display: block;
+}
+
+.dot.active {
+  background: #b339e2;
+  width: 18px;
+  border-radius: 4px;
+}
+
+/* ── responsive ── */
+@media (max-width: 768px) {
+  .hero { height: 380px; margin: 12px 2.5%; width: 95%; }
+  .heroContent { padding: 0 20px; max-width: 100%; }
+  .heroContent h1 { font-size: 1.4rem; letter-spacing: -0.8px; }
+  .heroCopy { font-size: 0.75rem; }
+  .heroMeta span { font-size: 0.62rem; padding: 3px 8px; }
+}
+
+@media (max-width: 540px) {
+  .hero { height: 300px; }
+  .heroContent h1 { font-size: 1.2rem; }
+  .heroCopy { display: none; }
+  .heroMeta { display: none; }
+  .btn { font-size: 0.72rem; padding: 8px 13px; }
+}
+
+@media (max-width: 380px) {
+  .hero { height: 260px; }
+  .heroContent h1 { font-size: 1rem; }
+  .heroCta { gap: 6px; }
+}

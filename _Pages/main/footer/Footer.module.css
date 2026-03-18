@@ -1,0 +1,156 @@
+.footer {
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: 0;
+}
+
+.footerTop {
+  background: linear-gradient(90deg, #130227 0%, #2A0A4A 40%, #4A1575 70%, #6A1FA3 100%);
+  border-top: 1px solid rgba(142, 68, 173, 0.25);
+  padding: 12px 0;
+}
+
+.footerTop .container {
+  display: flex;
+  justify-content: center;
+}
+
+.footerBottom {
+  background: #130227;
+  border-top: 1px solid rgba(142, 68, 173, 0.12);
+  padding: 12px 0;
+}
+
+.footerBottom .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.brandLogo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.legal {
+  color: #D1D1D1;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  justify-content: center;
+  font-size: 0.78rem;
+}
+
+.footerLinks a {
+  color: #D1D1D1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerLinks a:hover { color: #ffffff; }
+
+/* ── whatsapp float ── */
+.whatsappFloat {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.whatsappFloat:hover { transform: translateY(-3px); }
+
+/* ── label wrapper con fondo pill ── */
+.wppLabel {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px 6px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7B00D4 0%, #C400A8 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 4px 18px rgba(180, 0, 200, 0.55),
+    0 0 32px rgba(180, 0, 200, 0.30);
+  animation: wppPulse 2.4s ease-in-out infinite;
+}
+
+.wppLabel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 60%);
+  pointer-events: none;
+}
+
+@keyframes wppPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.15),
+      0 4px 18px rgba(180, 0, 200, 0.55),
+      0 0 32px rgba(180, 0, 200, 0.30);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.25),
+      0 4px 22px rgba(180, 0, 200, 0.80),
+      0 0 52px rgba(180, 0, 200, 0.50),
+      0 0 72px rgba(120, 0, 220, 0.25);
+  }
+}
+
+.wppLabelInner {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 0.76rem;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.wppIconWrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366, #0fa84a);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.7rem;
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.50);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  flex-shrink: 0;
+  transition: box-shadow 0.2s;
+}
+
+.whatsappFloat:hover .wppIconWrap {
+  box-shadow: 0 10px 36px rgba(37, 211, 102, 0.65);
+}
+
+@media (max-width: 900px) {
+  .footerLinks { justify-content: flex-start; }
+}
+
+@media (max-width: 640px) {
+  .wppLabel { display: none; }
+  .whatsappFloat { right: 16px; bottom: 16px; }
+}

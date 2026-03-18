@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {
+      "eyebrowIcon": "diamond",
+      "eyebrowText": "Imperdible",
+      "title": "Immortal Ways Heart to Heart",
+      "copy": "Mecanicas unicas y bonus rounds que te tienen al borde del asiento en cada giro.",
+      "metaProveedor": "Ruby Play",
+      "metaRTP": "RTP 96.30%",
+      "img": "/imagenes/RubyPlay/Heart.jpg"
+    },
+    {
+      "eyebrowIcon": "flash",
+      "eyebrowText": "Epico",
+      "title": "Immortal Ways Magic Gems",
+      "copy": "Gemas magicas con bonus rounds que se activan una y otra vez. Ruby Play al maximo.",
+      "metaProveedor": "Ruby Play",
+      "metaRTP": "RTP 96.35%",
+      "img": "/imagenes/RubyPlay/Magic.jpg"
+    },
+    {
+      "eyebrowIcon": "flame",
+      "eyebrowText": "Top del momento",
+      "title": "Immortal Ways Volcano",
+      "copy": "Lava, explosion y wilds que arrasan con todo. Cada giro puede ser el que lo cambie todo.",
+      "metaProveedor": "Ruby Play",
+      "metaRTP": "RTP 96.28%",
+      "img": "/imagenes/RubyPlay/Volcano.jpg"
+    }
+  ]
+}
