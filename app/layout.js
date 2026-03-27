@@ -25,9 +25,9 @@ export const metadata = {
   ],
   authors: [{ name: "GanamosDiversion" }],
   icons: {
-    icon: [{ url: "/logo.png", type: "image/png" }],
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: [{ url: "/icono.png", type: "image/png" }],
+    shortcut: "/icono.png",
+    apple: "/icono.png",
   },
   openGraph: {
     title: "GanamosDiversion - Casino Online Premium",
