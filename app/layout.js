@@ -25,8 +25,11 @@ export const metadata = {
   ],
   authors: [{ name: "GanamosDiversion" }],
   icons: {
-    icon: [{ url: "/icono.png", type: "image/png" }],
-    shortcut: "/icono.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icono.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
     apple: "/icono.png",
   },
   openGraph: {
