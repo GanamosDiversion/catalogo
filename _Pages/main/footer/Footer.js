@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 import { numero } from "@/_Pages/numero.json";
@@ -32,7 +33,15 @@ export default function Footer() {
         </div>
         <div className={styles.footerBottom}>
           <div className={styles.container}>
-            <img src="/logo.png" alt="GanamosDiversion" className={styles.brandLogo} />
+            <Image
+              src="/logo.png"
+              alt="GanamosDiversion"
+              className={styles.brandLogo}
+              width={160}
+              height={50}
+              priority={false}
+              unoptimized
+            />
             <p className={styles.legal}>
               Solo mayores de 18 anos. El juego en exceso puede generar dependencia. Jugue con responsabilidad.
             </p>

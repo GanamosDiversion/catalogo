@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./terminos.module.css";
 import { numero } from "@/_Pages/numero.json";
@@ -26,7 +27,15 @@ export default function Terminos() {
       <header className={styles.topbar}>
         <div className={styles.topbarInner}>
           <Link href="/" className={styles.brand}>
-            <img src="/logo.png" alt="GanamosDiversion" className={styles.brandLogo} />
+            <Image
+              src="/logo.png"
+              alt="GanamosDiversion"
+              className={styles.brandLogo}
+              width={160}
+              height={50}
+              priority={false}
+              unoptimized
+            />
           </Link>
           <Link href="/" className={styles.backBtn}>
             <ion-icon name="arrow-back" /> Volver al inicio

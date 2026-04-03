@@ -1,7 +1,7 @@
 "use client"
 
-
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import { numero } from "@/_Pages/numero.json";
@@ -35,7 +35,15 @@ export default function Header() {
       <div className={`${styles.container} ${styles.topbarInner}`}>
 
         <Link href="/" className={styles.brand}>
-          <img src="/logo.png" alt="GanamosDiversion" className={styles.brandLogo} />
+          <Image
+            src="/logo.png"
+            alt="GanamosDiversion"
+            className={styles.brandLogo}
+            width={160}
+            height={50}
+            priority={false}
+            unoptimized
+          />
         </Link>
 
         <nav className={styles.nav}>
