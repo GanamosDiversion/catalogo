@@ -40,12 +40,21 @@ export const metadata = {
     siteName: "GanamosDiversion",
     locale: "es_AR",
     type: "website",
+    images: [
+      {
+        url: "/icono.png",
+        width: 512,
+        height: 512,
+        alt: "GanamosDiversion",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "GanamosDiversion - Casino Online Premium",
     description:
       "Slots, casino en vivo, ruleta y mucho mas. Pide tu usuario ahora.",
+    images: ["/icono.png"],
   },
   robots: {
     index: true,
